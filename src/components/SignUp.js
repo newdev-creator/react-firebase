@@ -18,6 +18,8 @@ function SignUp() {
           displayName
         });
         console.log(userAuth);
+        // Pour que les infos aient le temps de se transférer, il faut forcer le rechargement de la page.
+        window.location.reload();
       })
     } catch (error) {
       console.log(error.message);
